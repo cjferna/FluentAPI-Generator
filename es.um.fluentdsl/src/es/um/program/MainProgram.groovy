@@ -9,9 +9,9 @@ class MainProgram {
 		} else {
 			def generator = new FluentDSLGenerator(args[0])
 			generator.generate()
-			generator.printToFile("C:/Users/PCx/Documents/workspace/TFG/out")
+			generator.printToFile(args[0])
 			
-			println "Generado en: " + "C:/Users/PCx/Documents/workspace/TFG/out"
+			println "Generado en: " + args[0]
 		}
 	}
 }
